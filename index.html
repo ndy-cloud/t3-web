@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fa" />
+    <meta
+      name="description"
+      content="EngageLab 与极光面向 T3 出行香港业务的 AppPush、SMS、极光认证解决方案。"
+    />
+    <title>T3 出行香港业务｜消息触达与安全认证解决方案</title>
+    <link rel="preload" as="image" href="./assets/t3-hong-kong-hero.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要内容</a>
+
+    <header class="topbar" id="top">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="返回页面顶部">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <strong>EngageLab × 极光</strong>
+          <span>T3 出行香港业务解决方案</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span class="sr-only">打开导航</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="方案章节">
+          <a href="#context">业务现状</a>
+          <a href="#products">产品组合</a>
+          <a href="#scenarios">高价值场景</a>
+          <a href="#cases">行业案例</a>
+          <a href="#compliance">数据合规</a>
+          <a href="#plan">验证计划</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <a class="back-link" href="#top">返回方案首页</a>
+
+      <section class="proposal-hero reveal" aria-labelledby="hero-title">
+        <div class="tag-row" aria-label="方案范围">
+          <span>网约车与城市出行</span>
+          <span>香港首站</span>
+          <span>乘客端 + 司机端</span>
+          <span class="tag-accent">三产品协同</span>
+        </div>
+        <h1 id="hero-title">T3 出行香港业务消息触达与安全认证解决方案</h1>
+        <p class="hero-summary">
+          面向 T3 出行在香港的乘客端与司机端业务，以 <strong>EngageLab AppPush</strong> 承接高频行程消息，以
+          <strong>EngageLab SMS</strong> 触达关键服务通知，以 <strong>极光认证 JVerification</strong>
+          优化香港手机号注册登录。方案同时纳入数据中心节点选择，支持香港业务的数据部署与后续全球扩展规划。
+        </p>
+
+        <div class="metric-grid" aria-label="方案核心信息">
+          <article class="metric-card">
+            <strong>3 产品</strong>
+            <span>AppPush、SMS、极光认证</span>
+          </article>
+          <article class="metric-card metric-blue">
+            <strong>香港首站</strong>
+            <span>乘客、司机、运营三端协同</span>
+          </article>
+          <article class="metric-card metric-green">
+            <strong>6 类节点</strong>
+            <span>香港、新加坡、美国、欧洲、日本、巴西</span>
+          </article>
+          <article class="metric-card metric-orange">
+            <strong>3 个案例</strong>
+            <span>哈啰出行、凹凸出行、一嗨租车</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="context">
+        <h2>一、业务现状：香港业务需要重新规划“登录 + 行程消息 + 关键通知”</h2>
+        <p class="section-lead">
+          网约车业务同时具备高频、实时、双边用户和安全敏感四个特征。乘客下单后会持续等待司机接单、车辆到达、行程开始与支付完成；司机端则需要接收派单、改派、奖励、申诉与安全通知。任何一个关键节点发生延迟，都可能直接影响叫车体验与履约效率。
+        </p>
+        <p class="section-lead">
+          T3 进入香港后，还需要处理本地手机号登录体验、海外消息基础设施与数据中心选择。建议将三项产品分工设计：极光认证负责注册登录入口，AppPush 负责 App 内高频通知，SMS 负责强提醒、服务通知和未安装或未在线用户的手机号触达。
+        </p>
+
+        <div class="context-grid">
+          <div class="photo-panel reveal">
+            <img src="./assets/t3-hong-kong-hero.jpg" alt="香港城市道路中的智能出行车辆" />
+            <div class="photo-caption">
+              <strong>香港业务触达链路</strong>
+              <span>从账户进入，到实时履约，再到安全与运营消息</span>
+            </div>
+          </div>
+          <div class="signal-panel reveal">
+            <div class="signal-title">T3 香港业务的四类关键信号</div>
+            <article>
+              <span>账户入口</span>
+              <strong>注册、登录、退出后重新登录</strong>
+              <p>在 Android 与 iOS 端使用香港号码一键登录，减少手机号和验证码输入步骤。</p>
+            </article>
+            <article>
+              <span>订单履约</span>
+              <strong>派单、接单、到达、上车、完成</strong>
+              <p>以 AppPush 作为主通道，按乘客、司机、行程状态与优先级设置发送策略。</p>
+            </article>
+            <article>
+              <span>关键异常</span>
+              <strong>取消、改派、支付、安全事件</strong>
+              <p>AppPush 快速提醒，必要时使用 SMS 向手机号补充触达。</p>
+            </article>
+            <article>
+              <span>用户运营</span>
+              <strong>优惠券、会员、召回、司机激励</strong>
+              <p>结合标签、别名和用户状态分群，避免无差别群发影响体验。</p>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="content-section" id="products">
+        <h2>二、三项产品的角色定位与选择理由</h2>
+        <p class="section-lead">
+          三项产品不互相替代。它们分别解决“进入 App”“App 内实时消息”“手机号关键触达”三个问题，共同覆盖一段完整出行服务链路。
+        </p>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <div class="capability-head">
+              <span>产品 A</span>
+              <strong>EngageLab AppPush</strong>
+            </div>
+            <p>用于乘客端和司机端的高频 App 消息。支持 Android、iOS、HarmonyOS，并覆盖 FCM、APNs 与主流 Android 厂商通道。</p>
+            <ul>
+              <li>支持通知栏消息与自定义消息</li>
+              <li>支持按厂商通道配置发送策略</li>
+              <li>提供送达、展示、点击与折损分析</li>
+              <li>提供 Push、Report、Schedule、Device API</li>
+            </ul>
+            <div class="best-for"><span>最适合</span>订单状态、司机派单、车辆到达、行程完成、运营召回</div>
+          </article>
+
+          <article class="capability-card capability-card-green reveal">
+            <div class="capability-head">
+              <span>产品 B</span>
+              <strong>EngageLab SMS</strong>
+            </div>
+            <p>用于关键服务消息和手机号触达。提供全球运营商直达网络、控制台与 API 两种发送方式，并支持模板和签名审核。</p>
+            <ul>
+              <li>覆盖 190+ 国家与地区</li>
+              <li>支持交易通知与营销短信</li>
+              <li>按实际发送量计费，无月度最低消费</li>
+              <li>支持发送记录、费用与效果数据查询</li>
+            </ul>
+            <div class="best-for"><span>最适合</span>行程变更、支付提醒、安全通知、未在线用户提醒</div>
+          </article>
+
+          <article class="capability-card capability-card-orange reveal">
+            <div class="capability-head">
+              <span>产品 C</span>
+              <strong>极光认证 JVerification</strong>
+            </div>
+            <p>用于香港手机号快捷注册登录。当前香港业务仅提供一键登录能力，支持 Android 与 iOS。</p>
+            <ul>
+              <li>用户无需手动输入手机号即可注册登录</li>
+              <li>无需输入短信验证码，缩短登录操作路径</li>
+              <li>香港一键登录支持 Android 与 iOS</li>
+              <li>可同时服务乘客端与司机端登录入口</li>
+            </ul>
+            <div class="best-for"><span>最适合</span>乘客注册登录、司机注册登录、退出后重新登录</div>
+          </article>
+        </div>
+
+        <div class="auth-visual reveal">
+          <img src="./assets/t3-jverification.jpg" alt="香港乘客使用手机号快捷登录出行应用" loading="lazy" />
+          <div class="auth-visual-copy">
+            <span class="eyebrow">HONG KONG ACCESS</span>
+            <h3>香港号码一键登录建议</h3>
+            <p>将一键登录放在乘客端与司机端的用户旅程入口，减少手机号和短信验证码输入步骤，提高注册登录效率。</p>
+            <div class="auth-checks">
+              <div><strong>乘客端</strong><span>新用户注册、日常登录与重新登录</span></div>
+              <div><strong>司机端</strong><span>司机注册、登录与重新进入工作台</span></div>
+              <div><strong>支持平台</strong><span>香港业务支持 Android 与 iOS</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">产品角色矩阵</h3>
+        <div class="table-wrap reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>产品</th>
+                <th>解决的问题</th>
+                <th>T3 主要对象</th>
+                <th>典型触发</th>
+                <th>为什么选择</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>AppPush</strong></td>
+                <td>App 内高频、实时、可分析的消息触达</td>
+                <td>乘客、司机</td>
+                <td>行程状态、派单、到达、运营事件</td>
+                <td>多平台与多通道覆盖，可分析消息折损</td>
+              </tr>
+              <tr>
+                <td><strong>SMS</strong></td>
+                <td>手机号强提醒与关键服务通知</td>
+                <td>未在线用户、高风险场景用户</td>
+                <td>取消改派、支付异常、安全事件、活动提醒</td>
+                <td>全球运营商网络，API 接入，状态可追踪</td>
+              </tr>
+              <tr>
+                <td><strong>极光认证</strong></td>
+                <td>降低香港手机号注册登录步骤</td>
+                <td>新乘客、新司机、重新登录用户</td>
+                <td>首次启动、注册、登录、重新登录</td>
+                <td>香港一键登录，支持 Android 与 iOS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section" id="scenarios">
+        <h2>三、T3 香港业务高价值场景总览</h2>
+        <p class="section-lead">
+          建议优先上线对履约与安全影响最大的场景，再扩展至用户运营。以下场景均为建议方案，需要结合 T3 现有事件定义、消息等级与业务规则确认。
+        </p>
+
+        <div class="table-wrap scenario-table reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>优先级</th>
+                <th>业务场景</th>
+                <th>主要对象</th>
+                <th>推荐产品</th>
+                <th>通道选择逻辑</th>
+                <th>验证指标</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="priority p0">P0</span></td>
+                <td><strong>香港手机号快捷注册登录</strong></td>
+                <td>乘客、司机</td>
+                <td>极光认证</td>
+                <td>一键登录减少手机号与短信验证码输入步骤</td>
+                <td>登录完成率、认证成功率、平均耗时</td>
+              </tr>
+              <tr>
+                <td><span class="priority p0">P0</span></td>
+                <td><strong>司机派单与接单提醒</strong></td>
+                <td>司机</td>
+                <td>AppPush</td>
+                <td>实时推送派单，自定义消息驱动 App 内业务处理</td>
+                <td>送达率、接单响应时间、消息折损</td>
+              </tr>
+              <tr>
+                <td><span class="priority p0">P0</span></td>
+                <td><strong>车辆到达与乘客上车提醒</strong></td>
+                <td>乘客</td>
+                <td>AppPush</td>
+                <td>按行程状态即时推送，减少用户反复查看 App</td>
+                <td>展示率、点击率、乘客取消率</td>
+              </tr>
+              <tr>
+                <td><span class="priority p0">P0</span></td>
+                <td><strong>取消、改派与路线异常</strong></td>
+                <td>乘客、司机</td>
+                <td>AppPush + SMS</td>
+                <td>Push 快速通知，关键事件按规则补充 SMS</td>
+                <td>关键消息触达率、异常处理时长</td>
+              </tr>
+              <tr>
+                <td><span class="priority p1">P1</span></td>
+                <td><strong>支付结果与安全提醒</strong></td>
+                <td>乘客、司机</td>
+                <td>SMS + AppPush</td>
+                <td>支付与高风险事件使用手机号强提醒，App 内同步状态</td>
+                <td>通知到达率、申诉率、客服咨询量</td>
+              </tr>
+              <tr>
+                <td><span class="priority p1">P1</span></td>
+                <td><strong>会员权益与乘客召回</strong></td>
+                <td>乘客</td>
+                <td>AppPush + SMS</td>
+                <td>App 活跃用户优先 Push，重大活动按许可与规则使用 SMS</td>
+                <td>点击率、领券率、复乘率</td>
+              </tr>
+              <tr>
+                <td><span class="priority p1">P1</span></td>
+                <td><strong>司机奖励与运营通知</strong></td>
+                <td>司机</td>
+                <td>AppPush + SMS</td>
+                <td>日常激励走 Push，结算或重要规则变化使用 SMS</td>
+                <td>阅读率、活动参与率、司机在线率</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="subsection-title">核心链路示意：从登录到行程结束</h3>
+        <div class="journey-flow reveal" aria-label="T3 香港业务核心链路">
+          <article>
+            <span>启动 App</span>
+            <strong>一键登录</strong>
+            <p>极光认证识别本机号码，用户授权后完成注册登录。</p>
+            <b>极光认证</b>
+          </article>
+          <i aria-hidden="true">→</i>
+          <article>
+            <span>叫车下单</span>
+            <strong>订单状态</strong>
+            <p>司机接单、车辆位置与到达状态持续触达。</p>
+            <b>AppPush</b>
+          </article>
+          <i aria-hidden="true">→</i>
+          <article>
+            <span>异常发生</span>
+            <strong>关键提醒</strong>
+            <p>取消、改派、支付或安全事件使用强提醒。</p>
+            <b>AppPush + SMS</b>
+          </article>
+          <i aria-hidden="true">→</i>
+          <article>
+            <span>行程完成</span>
+            <strong>服务闭环</strong>
+            <p>发送支付结果、评价入口、电子行程单与权益。</p>
+            <b>AppPush + SMS</b>
+          </article>
+        </div>
+
+        <div class="journey-detail-grid">
+          <article class="journey-detail reveal">
+            <h3>乘客注册登录</h3>
+            <dl>
+              <div><dt>进入条件</dt><dd>首次启动 App、注册、退出后重新登录</dd></div>
+              <div><dt>主产品</dt><dd>极光认证一键登录</dd></div>
+              <div><dt>覆盖终端</dt><dd>香港业务支持 Android 与 iOS</dd></div>
+              <div><dt>验收口径</dt><dd>登录完成率、认证成功率、平均登录耗时</dd></div>
+            </dl>
+          </article>
+          <article class="journey-detail reveal">
+            <h3>司机派单与履约</h3>
+            <dl>
+              <div><dt>进入条件</dt><dd>司机在线、平台产生派单或改派事件</dd></div>
+              <div><dt>主产品</dt><dd>AppPush 通知栏消息 + 自定义消息</dd></div>
+              <div><dt>发送策略</dt><dd>按操作系统、厂商通道和在线状态配置</dd></div>
+              <div><dt>验收口径</dt><dd>有效目标、发送、送达、展示、点击、接单</dd></div>
+            </dl>
+          </article>
+          <article class="journey-detail reveal">
+            <h3>异常与安全通知</h3>
+            <dl>
+              <div><dt>进入条件</dt><dd>订单取消、路线异常、支付失败、安全事件</dd></div>
+              <div><dt>主产品</dt><dd>AppPush 快速通知，SMS 关键提醒</dd></div>
+              <div><dt>频控要求</dt><dd>按事件等级、用户状态与本地时间设置规则</dd></div>
+              <div><dt>验收口径</dt><dd>关键消息触达率、处理时长、客服进线变化</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="cases">
+        <h2>四、出行行业案例与 T3 场景映射</h2>
+        <p class="section-lead">
+          三家出行企业分别验证了推送、海外节点与一键登录在出行业务中的组合价值，为 T3 香港业务提供可参考的产品路径。
+        </p>
+
+        <article class="case-block case-featured reveal">
+          <header class="case-header">
+            <div class="case-name"><span>哈</span><div><strong>哈啰出行</strong><small>国内与海外双体系</small></div></div>
+            <div class="case-products"><b>国内：极光推送</b><b>海外：EngageLab AppPush</b></div>
+          </header>
+          <div class="case-columns">
+            <div>
+              <h3>合作产品与部署</h3>
+              <p>国内业务使用极光推送；海外业务使用 EngageLab AppPush。出于海外合规考虑，海外部署采用美国与新加坡数据中心节点。</p>
+            </div>
+            <div>
+              <h3>为什么选择相关产品</h3>
+              <ul>
+                <li>国内与海外分别使用适配区域的消息产品与基础设施</li>
+                <li>AppPush 支持 Android、iOS 与多厂商通道</li>
+                <li>美国和新加坡节点用于匹配海外业务区域与部署要求</li>
+              </ul>
+            </div>
+            <div>
+              <h3>典型使用场景</h3>
+              <ul>
+                <li>订单与车辆状态通知</li>
+                <li>用户服务和运营消息</li>
+                <li>海外 App 用户分群触达</li>
+                <li>按区域部署数据中心</li>
+              </ul>
+            </div>
+            <div class="case-t3">
+              <h3>对 T3 香港业务的启示</h3>
+              <p>可沿用“业务区域决定产品和节点”的思路。香港业务优先评估香港节点，后续进入东南亚、北美、欧洲、日本或拉美时再按区域规划。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-block reveal">
+          <header class="case-header">
+            <div class="case-name"><span>凹</span><div><strong>凹凸出行</strong><small>国内推送合作</small></div></div>
+            <div class="case-products"><b>国内：极光推送</b></div>
+          </header>
+          <div class="case-columns">
+            <div>
+              <h3>合作产品</h3>
+              <p>当前合作产品为国内极光推送。</p>
+            </div>
+            <div>
+              <h3>为什么选择相关产品</h3>
+              <ul>
+                <li>出行业务订单状态变化频繁</li>
+                <li>乘客与车主均需要稳定消息触达</li>
+                <li>推送数据可用于排查送达与折损问题</li>
+              </ul>
+            </div>
+            <div>
+              <h3>典型使用场景</h3>
+              <ul>
+                <li>订单确认、车辆状态与服务进度</li>
+                <li>车主端订单与运营通知</li>
+                <li>活动、权益与用户召回</li>
+              </ul>
+            </div>
+            <div class="case-t3">
+              <h3>对 T3 香港业务的启示</h3>
+              <p>网约车与共享出行都依赖高频消息。T3 可将 AppPush 作为乘客端与司机端的统一实时消息底座。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-block reveal">
+          <header class="case-header">
+            <div class="case-name"><span>一</span><div><strong>一嗨租车</strong><small>推送与认证组合</small></div></div>
+            <div class="case-products"><b>国内：极光推送</b><b>国内：极光一键登录</b></div>
+          </header>
+          <div class="case-columns">
+            <div>
+              <h3>合作产品</h3>
+              <p>当前合作覆盖国内极光推送和极光一键登录。</p>
+            </div>
+            <div>
+              <h3>为什么选择相关产品</h3>
+              <ul>
+                <li>缩短用户注册登录步骤</li>
+                <li>登录后继续承接订单与服务消息</li>
+                <li>认证与推送形成连续的用户服务链路</li>
+              </ul>
+            </div>
+            <div>
+              <h3>典型使用场景</h3>
+              <ul>
+                <li>App 新用户一键注册登录</li>
+                <li>订单确认、取还车与支付通知</li>
+                <li>会员权益、优惠与用户召回</li>
+              </ul>
+            </div>
+            <div class="case-t3">
+              <h3>对 T3 香港业务的启示</h3>
+              <p>极光认证负责降低入口摩擦，AppPush 负责登录后的行程与运营消息。这与 T3 香港业务的产品组合高度一致。</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-section" id="compliance">
+        <h2>五、数据中心节点选择与合规架构</h2>
+        <p class="section-lead">
+          EngageLab AppPush 支持新加坡、巴西、欧洲、美国、香港、日本等数据中心选择。T3 主要业务区域为香港，建议在技术与合规评审阶段优先评估香港节点，再根据后续业务区域规划其他节点。
+        </p>
+
+        <div class="compliance-layout">
+          <div class="compliance-image reveal">
+            <img src="./assets/hong-kong-data-center.jpg" alt="香港区域数据中心与消息路由基础设施" loading="lazy" />
+          </div>
+          <div class="node-grid reveal" aria-label="AppPush 数据中心建议">
+            <article class="node-primary">
+              <strong>香港</strong>
+              <span>T3 香港业务建议优先评估</span>
+              <p>支持 AppPush 相关数据在香港区域部署，减少不必要的跨境传输路径，便于统一管理本地访问权限与日志。</p>
+            </article>
+            <article>
+              <strong>新加坡</strong>
+              <span>面向东南亚业务扩展</span>
+              <p>适合承接东南亚区域业务，帮助按区域隔离数据与服务，简化多市场的数据流向管理。</p>
+            </article>
+            <article>
+              <strong>日本</strong>
+              <span>面向日本市场</span>
+              <p>支持日本业务区域化部署，缩短跨区域处理链路，便于针对当地数据驻留要求开展评估。</p>
+            </article>
+            <article>
+              <strong>美国</strong>
+              <span>面向北美市场</span>
+              <p>支持北美业务独立部署与权限隔离，便于按业务区域管理数据访问、运维人员和审计记录。</p>
+            </article>
+            <article>
+              <strong>欧洲</strong>
+              <span>面向欧洲市场</span>
+              <p>帮助欧洲用户的 AppPush 相关数据在欧洲区域部署，便于开展数据驻留与跨境传输治理。</p>
+            </article>
+            <article>
+              <strong>巴西</strong>
+              <span>面向巴西及拉美市场</span>
+              <p>支持巴西及拉美业务区域化部署，减少跨区域数据链路，便于落实当地的数据访问与留存策略。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="compliance-value reveal">
+          <strong>节点选择对合规治理的核心帮助</strong>
+          <div>
+            <span>数据驻留</span>
+            <span>区域隔离</span>
+            <span>跨境链路控制</span>
+            <span>权限与日志审计</span>
+          </div>
+          <p>根据用户所在区域选择数据中心，可以缩短数据跨区域流转链路，并为数据驻留、访问控制、日志审计及跨境传输评估提供更清晰的技术边界。</p>
+        </div>
+
+        <h3 class="subsection-title">推荐数据与消息链路</h3>
+        <div class="architecture-row reveal">
+          <article><span>业务端</span><strong>乘客 App / 司机 App</strong><p>产生登录、订单、行程、支付与运营事件</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>登录层</span><strong>极光认证</strong><p>香港号码一键登录，支持 Android 与 iOS</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>消息层</span><strong>AppPush / SMS</strong><p>按消息等级与用户状态选择通道</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>数据区域</span><strong>香港节点优先评估</strong><p>后续按业务区域规划其他数据中心</p></article>
+        </div>
+
+        <div class="compliance-checks reveal">
+          <div><strong>节点选择</strong><span>根据用户分布、业务区域和内部架构确定</span></div>
+          <div><strong>短信合规</strong><span>完成目标市场的签名、模板、退订和发送时段要求</span></div>
+          <div><strong>认证合规</strong><span>按极光香港号码合规指引配置用户授权与隐私政策</span></div>
+          <div><strong>访问控制</strong><span>对 AppKey、API Key、服务端权限与日志进行分级管理</span></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="plan">
+        <h2>六、香港业务验证计划</h2>
+        <p class="section-lead">
+          建议先选择一条乘客链路和一条司机链路做最小验证，确认认证、推送、短信与数据中心配置后再扩大范围。
+        </p>
+        <div class="plan-grid reveal">
+          <article>
+            <strong>口径对齐</strong>
+            <span>确认产品边界与节点</span>
+            <ul><li>梳理乘客与司机消息清单</li><li>定义 P0 / P1 消息等级</li><li>确认香港节点与短信报备要求</li></ul>
+          </article>
+          <article>
+            <strong>最小接入</strong>
+            <span>完成三产品基础配置</span>
+            <ul><li>极光认证开通与 SDK 集成</li><li>AppPush 测试应用与发送策略</li><li>SMS 模板、签名与 API Key</li></ul>
+          </article>
+          <article>
+            <strong>场景联调</strong>
+            <span>跑通真实业务事件</span>
+            <ul><li>乘客与司机一键登录</li><li>司机派单与车辆到达</li><li>取消改派与关键短信</li></ul>
+          </article>
+          <article>
+            <strong>数据验收</strong>
+            <span>用自身基线做判断</span>
+            <ul><li>认证成功率与登录完成率</li><li>发送、送达、展示、点击与折损</li><li>关键通知触达与异常处理时长</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="next-box reveal">
+        <h2>建议下一步：先确认香港认证覆盖与 P0 消息清单</h2>
+        <div class="next-actions">
+          <div><strong>产品确认</strong><span>AppPush、SMS、极光认证</span></div>
+          <div><strong>节点确认</strong><span>香港节点优先评估</span></div>
+          <div><strong>场景确认</strong><span>登录、派单、到达、异常通知</span></div>
+        </div>
+        <a class="primary-button" href="#top">返回方案顶部</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div><strong>EngageLab × 极光</strong><span>T3 出行香港业务消息触达与安全认证解决方案</span></div>
+        <div class="footer-links">
+          <a href="https://www.engagelab.com/zh_CN/docs/app-push/user-guide/product-overview" target="_blank" rel="noreferrer">AppPush 文档</a>
+          <a href="https://www.engagelab.com/zh_CN/docs/sms/overview" target="_blank" rel="noreferrer">SMS 文档</a>
+          <a href="https://docs.jiguang.cn/jverification/guideline/jver_intro" target="_blank" rel="noreferrer">极光认证文档</a>
+        </div>
+        <p>面向 T3 出行香港业务，构建从一键登录、实时推送到关键短信触达的完整用户沟通链路。</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
